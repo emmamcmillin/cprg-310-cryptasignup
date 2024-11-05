@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    color: #0a1912;
+}
+
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    margin: 5vh auto;
+    padding: 5vw;
+    width: 80%;
+    max-width: 900px;
+    min-width: 280px;
+    
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1ch;
+}
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.1rem;
+   
+}
+
+/* Style the input fields */
+input, select {
+    width: 100%;
+    padding: 0.75em;
+    font-size: 1rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+/* Style for input range */
+input[type="range"] {
+    width: 100%;
+    accent-color: #33845B;
+}
+
+/* Hide all steps by default */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #33845B;
+}
+
+/* Responsive button styling */
+button {
+    background-color: #33845B;
+    color: #ffffff;
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    margin: 0.5em 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #2a6e48;
+}
+
+.thank-you-message {
+    text-align: center;
+    margin-top: 5vh;
+    color: #33845B;
+    font-size: 1.5rem;
+}
+
+/* SVG container styling */
+figure {
+    background-color: #33845B;
+    margin: 0; /* Remove default margin */
+    box-sizing: border-box; /* Ensure padding doesn't extend beyond the viewport */
+}
+
+embed {
+    max-width: 50%;
+    height: auto;
+    display: inline-block;
+    
+}
+
+/* Step indicator container */
+#step-indicator {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.invalid {
+    border: 2px solid #f95919;
+}
+
+legend {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+output{
+    color: #33845B;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 2ch;
+}
+
+#terms{
+    text-align: center;
+    padding-top: 5ch;
+}
+
+#terms input[type="checkbox"] {
+    transform: scale(2); 
+    cursor: pointer; 
+    accent-color: #33845B;
+}
+
+
+
+/* Responsive adjustments */
+@media (min-width: 1200px) {
+    #regForm {
+        width: 70%;
+        padding: 4vw;
+        max-width: 1200px;
+    }
+
+    label, input, select, button, legend {
+        font-size: 1.2rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+        
+    }
+
+    legend {
+        font-size: 2.8rem;
+    }
+
+    .thank-you-message {
+        font-size: 1.75rem;
+    }
+
+    button {
+        padding: 1em 2em;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #regForm {
+        padding: 5vw;
+        width: 95%;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    legend {
+        font-size: 1.75rem;
+    }
+
+    button {
+        padding: 0.75em 1em;
+        font-size: 1rem;
+    }
+
+    figure {
+        padding: 3em 0; /* Increase padding on larger screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #regForm {
+        padding: 4vw;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    legend {
+        font-size: 1.5rem;
+    }
+
+    .thank-you-message {
+        font-size: 1.25rem;
+    }
+}
